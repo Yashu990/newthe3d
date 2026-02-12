@@ -14,8 +14,11 @@
 
 /* Global Base Styles */
 body {
-  @apply font-sans antialiased text-primary bg-white rendering-optimizeLegibility;
+  @apply font-sans antialiased text-primary bg-white;
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -47,12 +50,6 @@ h6 {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-
-.rendering-optimizeLegibility {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .bg-dots-pattern {
