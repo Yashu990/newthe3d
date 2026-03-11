@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
     const services = [
@@ -426,12 +427,12 @@ const Services = () => {
                         smart manufacturing, Industry 4.0, and localized production ecosystems.
                     </p>
                     <div className="flex justify-center gap-4">
-                        <a href="/contact" className="bg-[#FF6B35] hover:bg-[#E55A28] text-white font-bold px-8 py-4 rounded-lg transition-all duration-300 shadow-xl hover:scale-110">
+                        <Link to="/contact" className="bg-[#FF6B35] hover:bg-[#E55A28] text-white font-bold px-8 py-4 rounded-lg transition-all duration-300 shadow-xl hover:scale-110">
                             Start Your Project
-                        </a>
-                        <a href="/gallery" className="bg-white text-gray-900 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all duration-300 shadow-xl hover:scale-110">
+                        </Link>
+                        <Link to="/gallery" className="bg-white text-gray-900 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg transition-all duration-300 shadow-xl hover:scale-110">
                             View Projects
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -441,12 +442,12 @@ const Services = () => {
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
                     <p className="text-lg mb-8 text-orange-100">Get a free consultation and quote for your 3D printing needs</p>
-                    <a
-                        href="/contact"
+                    <Link
+                        to="/contact"
                         className="inline-block bg-white text-[#FF6B35] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg"
                     >
                         Request a Quote
-                    </a>
+                    </Link>
                 </div>
             </section>
         </div>

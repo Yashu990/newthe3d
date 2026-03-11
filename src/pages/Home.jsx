@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Industries from '../components/Industries';
 
@@ -117,9 +118,9 @@ const Home = () => {
                     </div>
 
                     <div className="text-center mt-12">
-                        <a href="/gallery" className="inline-block bg-[#FF6B35] hover:bg-[#E55A28] text-white font-bold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-110">
+                        <Link to="/gallery" className="inline-block bg-[#FF6B35] hover:bg-[#E55A28] text-white font-bold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-110">
                             View All Projects
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -194,9 +195,9 @@ const Home = () => {
                     </div>
 
                     <div className="text-center mt-16">
-                        <a href="/contact" className="inline-block bg-[#FF6B35] hover:bg-[#E55A28] text-white font-bold px-10 py-5 rounded-lg text-lg transition-all duration-300 shadow-2xl hover:shadow-[0_20px_60px_rgba(255,107,53,0.5)] hover:scale-110">
+                        <Link to="/contact" className="inline-block bg-[#FF6B35] hover:bg-[#E55A28] text-white font-bold px-10 py-5 rounded-lg text-lg transition-all duration-300 shadow-2xl hover:shadow-[0_20px_60px_rgba(255,107,53,0.5)] hover:scale-110">
                             Get Started Today
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>

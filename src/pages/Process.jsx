@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Process = () => {
     const steps = [
@@ -177,12 +178,12 @@ const Process = () => {
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
                     <p className="text-lg mb-8 text-orange-100">Let's bring your ideas to life with precision 3D printing</p>
-                    <a
-                        href="/contact"
+                    <Link
+                        to="/contact"
                         className="inline-block bg-white text-[#FF6B35] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg"
                     >
                         Start Your Project
-                    </a>
+                    </Link>
                 </div>
             </section>
         </div>
