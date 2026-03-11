@@ -153,7 +153,9 @@ const Hero = () => {
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 mb-12">
                         <motion.a
-                            href="#contact"
+                            href="https://share.google/rbdoC8iZyU9TDbTnT"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             whileHover={{ scale: 1.04, boxShadow: '0 0 32px rgba(255,107,53,0.5)' }}
                             whileTap={{ scale: 0.97 }}
                             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#FF6B35] to-[#E55A28] text-white text-sm font-bold rounded-lg transition-all shadow-lg shadow-orange-900/30"
@@ -163,17 +165,7 @@ const Hero = () => {
                             </svg>
                             Get an Instant Quote
                         </motion.a>
-                        <motion.a
-                            href="#gallery"
-                            whileHover={{ scale: 1.04 }}
-                            whileTap={{ scale: 0.97 }}
-                            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/15 hover:border-white/30 text-white text-sm font-semibold rounded-lg transition-all"
-                        >
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                            </svg>
-                            View Our Work
-                        </motion.a>
+
                     </div>
 
                     {/* Stats strip – mobile only */}

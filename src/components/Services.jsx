@@ -103,10 +103,7 @@ const Services = () => {
                                     ))}
                                 </ul>
 
-                                {/* Blue Link at bottom */}
-                                <a href="#" className="text-[#0066CC] font-bold text-sm inline-flex items-center hover:underline mt-auto">
-                                    {item.linkText}
-                                </a>
+
                             </div>
                         </motion.div>
                     ))}

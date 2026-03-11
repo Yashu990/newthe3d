@@ -91,12 +91,12 @@ const Home = () => {
 
                     <div className="grid md:grid-cols-3 gap-6">
                         {[
-                            { img: "/photo/2026-01-02.webp", title: "Complex Assembly", category: "Industrial" },
-                            { img: "/photo/gallery-drone.webp", title: "Aerospace Component", category: "Aerospace" },
-                            { img: "/photo/2025-06-04.webp", title: "Medical Device", category: "Healthcare" },
-                            { img: "/photo/gallery-angel.webp", title: "Consumer Product", category: "Retail" },
-                            { img: "/photo/2024-08-04.webp", title: "Manufacturing Tool", category: "Industrial" },
-                            { img: "/photo/2025-11-17.webp", title: "Automotive Part", category: "Automotive" }
+                            { img: "/photo/tooling-molds.jpg", title: "Rapid Tooling Molds", category: "Manufacturing" },
+                            { img: "/photo/sla-skulls.jpg", title: "Anatomical Models", category: "Healthcare" },
+                            { img: "/photo/auto-box.jpg", title: "Custom Electronics Enclosure", category: "Industrial" },
+                            { img: "/photo/arch-model.jpg", title: "Architectural Floor Plan", category: "Architecture" },
+                            { img: "/photo/edu-research.jpg", title: "Educational Prototyping", category: "Education" },
+                            { img: "/photo/gallery-drone.webp", title: "Aerospace Component", category: "Aerospace" }
                         ].map((project, idx) => (
                             <div key={idx} className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
                                 <div className="aspect-square overflow-hidden">

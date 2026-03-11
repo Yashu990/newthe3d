@@ -50,7 +50,7 @@ const Industries = () => {
                 "Lower cost compared to traditional medical manufacturing",
                 "Faster recovery outcomes"
             ],
-            images: ["/photo/2025-06-04.webp", "/photo/2025-12-19.webp"]
+            images: ["/photo/sla-skulls.jpg", "/photo/2025-12-19.webp"]
         },
         {
             id: 4,
@@ -119,7 +119,7 @@ const Industries = () => {
                 "Sustainable material usage",
                 "Rapid project execution"
             ],
-            images: ["/photo/2025-02-04.webp", "/photo/2025-11-20.webp"]
+            images: ["/photo/arch-model.jpg", "/photo/2025-11-20.webp"]
         },
         {
             id: 7,
@@ -142,7 +142,7 @@ const Industries = () => {
                 "Prepares students for Industry 4.0",
                 "Low-cost experimentation"
             ],
-            images: ["/photo/2024-12-30.webp", "/photo/2025-12-04.webp"]
+            images: ["/photo/edu-research.jpg", "/photo/2025-12-04.webp"]
         },
         {
             id: 8,
@@ -188,7 +188,7 @@ const Industries = () => {
                 "Ideal for pilot and low-volume runs",
                 "Faster market validation"
             ],
-            images: ["/photo/2025-06-06.webp", "/photo/2025-12-08.webp"]
+            images: ["/photo/tooling-molds.jpg", "/photo/2025-12-08.webp"]
         }
     ];
 

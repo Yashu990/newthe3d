@@ -50,10 +50,7 @@ const GlobalReach = () => {
                         <p className="text-base text-gray-600 leading-relaxed mb-8">
                             Access 3D Printing factories for accelerated manufacturing of quality parts or use our Network for volume pricing, tighter tolerances, and more complex parts. The result? Digital manufacturing and engineering expertise that meets all your needs from prototyping to production.
                         </p>
-                        <a href="#" className="text-[#0066CC] font-bold text-base inline-flex items-center hover:underline group">
-                            Learn more about our network
-                            <svg className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-                        </a>
+
                     </div>
                 </div>
             </div>
