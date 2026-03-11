@@ -250,7 +250,7 @@ const Industries = () => {
                                     <ul className="space-y-1">
                                         {industry.keyContributions.slice(0, 2).map((item, idx) => (
                                             <li key={idx} className="text-xs text-gray-600 flex items-start">
-                                                <span className="mr-1.5 text-[#0066CC] mt-0.5">•</span>
+                                                <span className="mr-1.5 text-[#FF6B35] mt-0.5">•</span>
                                                 {item}
                                             </li>
                                         ))}
@@ -263,7 +263,7 @@ const Industries = () => {
                                     <ul className="space-y-1">
                                         {industry.applications.slice(0, 3).map((item, idx) => (
                                             <li key={idx} className="text-xs text-gray-600 flex items-start">
-                                                <span className="mr-1.5 text-[#0066CC] mt-0.5">•</span>
+                                                <span className="mr-1.5 text-[#FF6B35] mt-0.5">•</span>
                                                 {item}
                                             </li>
                                         ))}
@@ -272,7 +272,7 @@ const Industries = () => {
 
                                 {/* Benefits - Highlighted */}
                                 <div className="mt-auto pt-4 border-t border-gray-100">
-                                    <p className="text-xs font-bold text-[#0066CC]">
+                                    <p className="text-xs font-bold text-[#FF6B35]">
                                         ✓ {industry.benefits[0]}
                                     </p>
                                 </div>
@@ -306,14 +306,14 @@ const Industries = () => {
                 </div>
 
                 {/* Section 11: Conclusion */}
-                <div className="bg-gradient-to-br from-blue-600 to-blue-700 text-white p-10 rounded-2xl shadow-2xl max-w-5xl mx-auto">
+                <div className="bg-gradient-to-br from-[#FF6B35] to-[#E55A28] text-white p-10 rounded-2xl shadow-2xl max-w-5xl mx-auto">
                     <h3 className="text-2xl font-bold mb-6">11. Conclusion</h3>
-                    <p className="text-lg leading-relaxed mb-4 text-blue-50">
+                    <p className="text-lg leading-relaxed mb-4 text-orange-100">
                         3D printing is no longer just a prototyping tool—it is a strategic manufacturing technology reshaping
                         industries worldwide. From healthcare and aerospace to education and construction, additive manufacturing
                         enables speed, customization, cost-efficiency, and innovation.
                     </p>
-                    <p className="text-lg leading-relaxed text-blue-50">
+                    <p className="text-lg leading-relaxed text-orange-100">
                         As materials, machines, and software continue to advance, 3D printing will play a central role in the
                         future of smart manufacturing, Industry 4.0, and localized production ecosystems.
                     </p>
