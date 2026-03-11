@@ -24,7 +24,7 @@ const Services = () => {
                 "Medical-grade materials available",
                 "Perfect for jewelry, dental, and medical"
             ],
-            image: "/photo/2025-01-08.webp"
+            image: "/photo/sla-part.jpg"
         },
         {
             title: "SLS (Selective Laser Sintering)",
@@ -35,7 +35,7 @@ const Services = () => {
                 "Complex geometries possible",
                 "Nylon and other engineering materials"
             ],
-            image: "/photo/2024-08-04.webp"
+            image: "/photo/sls-part.jpg"
         },
         {
             title: "Multi-Material Printing",
