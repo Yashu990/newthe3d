@@ -45,7 +45,7 @@ function App() {
             <div>
               <h4 className="font-bold text-white mb-3">Visit Us</h4>
               <p className="text-sm text-gray-400 leading-relaxed">
-                G 13, 1st Floor<br />
+                G 13, 5th Floor<br />
                 Noida Sector 6<br />
                 Uttar Pradesh 201301<br />
                 <span className="text-xs text-gray-500 mt-2 block">GST: 09ELAPK5758J1ZM</span>

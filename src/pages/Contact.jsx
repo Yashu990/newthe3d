@@ -183,7 +183,7 @@ const Contact = () => {
                                         <div>
                                             <h3 className="font-bold text-gray-900 mb-1">Address</h3>
                                             <p className="text-gray-600">
-                                                G 13, 1st Floor, Noida Sector 6<br />
+                                                G 13, 5th Floor, Noida Sector 6<br />
                                                 Uttar Pradesh 201301, India
                                             </p>
                                         </div>
@@ -237,14 +237,14 @@ const Contact = () => {
                     <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white hover:scale-[1.02] transition-transform duration-300">
                         <div className="aspect-video w-full">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0776890933873!2d77.31345431508236!3d28.62723298242743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce55b98d3b7cf%3A0x3d6f9e0e8f8e8e8e!2sSector%206%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.3!2d77.3209687!3d28.5959439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce53a0ec930ff%3A0xceb01b03889d3c7b!2s3D%20PRINTING%20COMPANY!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}
                                 allowFullScreen=""
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                title="Company Location - Noida Sector 6"
+                                title="The 3D Printing Company - G-13, 5th Floor, Sector 6, Noida"
                                 className="w-full h-full"
                             ></iframe>
                         </div>

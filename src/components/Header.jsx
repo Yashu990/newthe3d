@@ -14,7 +14,7 @@ const Header = () => {
     ];
 
     return (
-        <header className="fixed top-0 left-0 right-0 bg-black border-b border-gray-800 z-50 shadow-lg">
+        <header className="fixed top-0 left-0 right-0 bg-black z-50 shadow-lg">
             <div className="w-full px-0">
                 <div className="flex items-center justify-between h-20 px-4">
                     {/* Logo Section - Absolute Left Edge */}
