@@ -22,7 +22,7 @@ const Contact = () => {
                                 </div>
                                 <div className="ml-4">
                                     <h4 className="text-lg font-bold text-gray-900">Visit Us</h4>
-                                    <p className="text-gray-600 mt-1">G 13, G Block, Sector 6<br />Noida, Uttar Pradesh 201301</p>
+                                    <p className="text-gray-600 mt-1">Third Floor, G 13, G Block, Sector 6<br />Noida, Uttar Pradesh 201301</p>
                                 </div>
                             </div>
 

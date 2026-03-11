@@ -83,7 +83,7 @@ const Contact = () => {
                                 </svg>
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-2">Visit Us</h3>
-                            <p className="text-gray-600 text-sm">G 13, G Block, Sector 6<br />Noida, UP 201301</p>
+                            <p className="text-gray-600 text-sm">Third Floor, G 13, G Block, Sector 6<br />Noida, UP 201301</p>
                         </div>
 
                         {/* Website/Info Card */}

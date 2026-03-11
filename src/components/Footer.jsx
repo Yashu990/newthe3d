@@ -45,7 +45,7 @@ const Footer = () => {
                     <div>
                         <h4 className="font-semibold text-lg mb-6">Contact</h4>
                         <ul className="space-y-3 text-gray-400">
-                            <li>G 13, G Block, Sector 6, Noida, Uttar Pradesh 201301</li>
+                            <li>Third Floor, G 13, G Block, Sector 6, Noida, Uttar Pradesh 201301</li>
                             <li>+91-9310588258</li>
                             <li><a href="mailto:info@3dprintingcompany.in" className="hover:text-white underline">info@3dprintingcompany.in</a></li>
                             <li className="pt-4 text-xs">GST: 09ELAPK5758J1ZM</li>
