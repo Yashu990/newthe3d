@@ -48,177 +48,70 @@ const Contact = () => {
             {/* Contact Form & Info */}
             <section className="py-20">
                 <div className="container mx-auto px-4 max-w-6xl">
-                    <div className="grid md:grid-cols-2 gap-12">
-                        {/* Contact Form */}
-                        <div className="bg-white rounded-2xl border border-gray-200 p-8 shadow-lg">
-                            <h2 className="text-2xl font-bold mb-6 text-gray-900">Send Us a Message</h2>
-                            <form onSubmit={handleSubmit} className="space-y-6">
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        value={formData.name}
-                                        onChange={handleChange}
-                                        required
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-transparent outline-none transition-all"
-                                        placeholder="John Doe"
-                                    />
-                                </div>
-
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        required
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-transparent outline-none transition-all"
-                                        placeholder="john@company.com"
-                                    />
-                                </div>
-
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
-                                    <input
-                                        type="tel"
-                                        name="phone"
-                                        value={formData.phone}
-                                        onChange={handleChange}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-transparent outline-none transition-all"
-                                        placeholder="+91-XXXXXXXXXX"
-                                    />
-                                </div>
-
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-2">Company/Organization</label>
-                                    <input
-                                        type="text"
-                                        name="company"
-                                        value={formData.company}
-                                        onChange={handleChange}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-transparent outline-none transition-all"
-                                        placeholder="Your Company Name"
-                                    />
-                                </div>
-
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-2">Service Interested In</label>
-                                    <select
-                                        name="service"
-                                        value={formData.service}
-                                        onChange={handleChange}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-transparent outline-none transition-all"
-                                    >
-                                        <option value="general">General Inquiry</option>
-                                        <option value="fdm">FDM Printing</option>
-                                        <option value="sla">SLA Printing</option>
-                                        <option value="sls">SLS Printing</option>
-                                        <option value="multi">Multi-Material Printing</option>
-                                        <option value="quote">Get a Quote</option>
-                                    </select>
-                                </div>
-
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-2">Message *</label>
-                                    <textarea
-                                        name="message"
-                                        value={formData.message}
-                                        onChange={handleChange}
-                                        required
-                                        rows="5"
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-transparent outline-none transition-all resize-none"
-                                        placeholder="Tell us about your project..."
-                                    ></textarea>
-                                </div>
-
-                                <button
-                                    type="submit"
-                                    className="w-full bg-[#FF6B35] hover:bg-[#E55A28] text-white font-bold py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
-                                >
-                                    Send Message
-                                </button>
-                            </form>
+                    {/* Contact Information Cards */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
+                        {/* Phone Card */}
+                        <div className="bg-white rounded-2xl p-6 lg:p-4 xl:p-8 border border-gray-100 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center group cursor-pointer">
+                            <div className="w-16 h-16 bg-[#FF6B35]/10 text-[#FF6B35] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#FF6B35] group-hover:text-white transition-colors duration-300">
+                                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-2">Call Us</h3>
+                            <a href="tel:+919310588258" className="text-base font-medium text-gray-600 hover:text-[#FF6B35] transition-colors">+91-9310588258</a>
+                            <p className="text-xs text-gray-500 mt-2">Mon-Sat: 9 AM - 7 PM IST</p>
                         </div>
 
-                        {/* Contact Information */}
-                        <div className="space-y-8">
-                            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
-                                <h2 className="text-2xl font-bold mb-6 text-gray-900">Get In Touch</h2>
-                                <div className="space-y-6">
-                                    <div className="flex items-start gap-4">
-                                        <div className="bg-[#FF6B35] text-white p-3 rounded-lg">
-                                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
-                                            <p className="text-gray-600">+91-9310588258</p>
-                                            <p className="text-sm text-gray-500">Mon-Sat: 9 AM - 7 PM IST</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex items-start gap-4">
-                                        <div className="bg-[#FF6B35] text-white p-3 rounded-lg">
-                                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-                                            <p className="text-gray-600">info@3dprintingcompany.in</p>
-                                            <p className="text-sm text-gray-500">24-hour response time</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex items-start gap-4">
-                                        <div className="bg-[#FF6B35] text-white p-3 rounded-lg">
-                                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h3 className="font-bold text-gray-900 mb-1">Address</h3>
-                                            <p className="text-gray-600">
-                                                G 13, 5th Floor, Noida Sector 6<br />
-                                                Uttar Pradesh 201301, India
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex items-start gap-4">
-                                        <div className="bg-[#FF6B35] text-white p-3 rounded-lg">
-                                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h3 className="font-bold text-gray-900 mb-1">Website</h3>
-                                            <p className="text-gray-600">www.3dprintingcompany.in</p>
-                                            <p className="text-sm text-gray-500">GST: 09ELAPK5758J1ZM</p>
-                                        </div>
-                                    </div>
-                                </div>
+                        {/* Email Card */}
+                        <div className="bg-white rounded-2xl p-6 lg:p-4 xl:p-8 border border-gray-100 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center group cursor-pointer">
+                            <div className="w-16 h-16 bg-[#FF6B35]/10 text-[#FF6B35] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#FF6B35] group-hover:text-white transition-colors duration-300">
+                                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
                             </div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-2">Email Us</h3>
+                            <a href="mailto:info@3dprintingcompany.in" className="text-[13px] sm:text-sm font-medium text-gray-600 hover:text-[#FF6B35] transition-colors tracking-tight block">info@3dprintingcompany.in</a>
+                            <p className="text-xs text-gray-500 mt-2">24-hour response time</p>
+                        </div>
 
-                            {/* Quick Links */}
-                            <div className="bg-blue-50 rounded-2xl p-8 border border-blue-200">
-                                <h3 className="text-xl font-bold mb-4 text-gray-900">Quick Response</h3>
-                                <p className="text-gray-600 mb-4">
-                                    Need immediate assistance? We typically respond within 1-2 business hours during working days.
-                                </p>
-                                <div className="flex gap-4">
-                                    <a href="tel:+919310588258" className="flex-1 bg-[#FF6B35] text-white text-center py-3 rounded-lg font-bold hover:bg-[#E55A28] transition-all">
-                                        Call Now
-                                    </a>
-                                    <a href="mailto:info@3dprintingcompany.in" className="flex-1 bg-white text-[#FF6B35] border-2 border-[#FF6B35] text-center py-3 rounded-lg font-bold hover:bg-[#FF6B35] hover:text-white transition-all">
-                                        Email Us
-                                    </a>
-                                </div>
+                        {/* Address Card */}
+                        <div className="bg-white rounded-2xl p-6 lg:p-4 xl:p-8 border border-gray-100 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center group cursor-pointer">
+                            <div className="w-16 h-16 bg-[#FF6B35]/10 text-[#FF6B35] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#FF6B35] group-hover:text-white transition-colors duration-300">
+                                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
                             </div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-2">Visit Us</h3>
+                            <p className="text-gray-600 text-sm">G 13, G Block, Sector 6<br />Noida, UP 201301</p>
+                        </div>
+
+                        {/* Website/Info Card */}
+                        <div className="bg-white rounded-2xl p-6 lg:p-4 xl:p-8 border border-gray-100 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center group cursor-pointer">
+                            <div className="w-16 h-16 bg-[#FF6B35]/10 text-[#FF6B35] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#FF6B35] group-hover:text-white transition-colors duration-300">
+                                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                                </svg>
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-2">Website</h3>
+                            <a href="https://www.3dprintingcompany.in" target="_blank" rel="noopener noreferrer" className="text-[13px] sm:text-sm font-medium text-gray-600 hover:text-[#FF6B35] transition-colors tracking-tight block">www.3dprintingcompany.in</a>
+                            <p className="text-xs text-gray-500 mt-2">GST: 09ELAPK5758J1ZM</p>
+                        </div>
+                    </div>
+
+                    {/* Quick Response Banner */}
+                    <div className="mt-12 bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-8 md:p-12 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8">
+                        <div>
+                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">Ready to start your project?</h3>
+                            <p className="text-gray-300 text-lg">Send us an email or give us a call for a quick quote.</p>
+                        </div>
+                        <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+                            <a href="tel:+919310588258" className="bg-[#FF6B35] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#E55A28] transition-all duration-300 text-center shadow-lg hover:shadow-xl whitespace-nowrap">
+                                Call Now
+                            </a>
+                            <a href="mailto:info@3dprintingcompany.in" className="bg-white text-gray-900 px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all duration-300 text-center shadow-lg hover:shadow-xl whitespace-nowrap">
+                                Email Us
+                            </a>
                         </div>
                     </div>
                 </div>

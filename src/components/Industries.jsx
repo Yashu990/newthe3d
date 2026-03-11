@@ -96,7 +96,7 @@ const Industries = () => {
                 "Lightweight part production",
                 "Customization for limited editions"
             ],
-            images: ["/photo/2025-11-17.webp", "/photo/2026-01-17.webp"]
+            images: ["/photo/auto-box.jpg", "/photo/2026-01-17.webp"]
         },
         {
             id: 6,

@@ -28,7 +28,7 @@ const Header = () => {
                         </div>
                         <div className="flex flex-col">
                             <span className="text-lg font-black text-white tracking-tight leading-tight">
-                                THE 3D PRINTING COMPANY
+                                3D PRINTING COMPANY
                             </span>
                             <span className="text-[10px] font-semibold text-gray-400 tracking-widest uppercase">
                                 Industrial Manufacturing

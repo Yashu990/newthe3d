@@ -73,7 +73,7 @@ const Home = () => {
                         <div className="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
                             <div className="text-3xl mb-3 group-hover:scale-125 transition-transform duration-300">🛡️</div>
                             <h3 className="font-bold text-gray-900 mb-2 group-hover:text-[#FF6B35] transition-colors">Quality Certified</h3>
-                            <p className="text-sm text-gray-600">GST: 09ELAPK5758J1ZM</p>
+                            <p className="text-sm text-gray-600">ISO 9001:2015</p>
                         </div>
                     </div>
                 </div>

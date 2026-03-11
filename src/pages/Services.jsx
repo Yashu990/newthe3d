@@ -12,7 +12,7 @@ const Services = () => {
                 "Fast production times",
                 "Ideal for prototypes and tooling"
             ],
-            image: "/photo/vibrant-printers.webp"
+            image: "/photo/auto-box.jpg"
         },
         {
             title: "SLA (Stereolithography)",
